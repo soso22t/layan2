@@ -200,18 +200,18 @@ const Index = () => {
                         </div>
                       </div>
 
-                      {/* أسماء العرسان */}
+                      {/* أسماء العرسان (تم تصغير الحجم ومنع نزول السطر) */}
                       <div className="w-full my-2 py-0 h-12 flex items-center justify-center relative z-20">
                         <div
                           className={`${
                             lang === "ar"
-                              ? "font-iran text-[3.5rem] sm:text-[4.2rem] translate-y-2"
-                              : "font-whitney text-2xl sm:text-3xl translate-y-7"
-                          } tracking-wide leading-none text-center flex items-baseline justify-center gap-3 transition-transform duration-200`}
+                              ? "font-iran text-2xl sm:text-3xl translate-y-2"
+                              : "font-whitney text-xl sm:text-2xl translate-y-7"
+                          } tracking-wide leading-none text-center flex items-baseline justify-center gap-3 whitespace-nowrap transition-transform duration-200`}
                           style={{ lineHeight: 0.85 }}
                           dir={lang === "ar" ? "rtl" : "ltr"}
                         >
-                          <span className="inline-flex items-center">
+                          <span className="inline-flex items-center whitespace-nowrap">
                             {t("bride_name")}
                           </span>
 
