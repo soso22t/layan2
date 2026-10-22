@@ -205,7 +205,7 @@ const Index = () => {
                         <div
                           className={`${
                             lang === "ar"
-                              ? "font-iran text-3xl sm:text-4xl translate-y-2"
+                              ? "font-iran text-4xl sm:text-5xl translate-y-2"
                               : "font-whitney text-xl sm:text-2xl translate-y-7"
                           } tracking-wide leading-none text-center flex items-baseline justify-center gap-3 whitespace-nowrap transition-transform duration-200`}
                           style={{ lineHeight: 0.85 }}
