@@ -1,18 +1,19 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+
 export type Lang = "ar" | "en";
 type Dict = Record<string, string>;
 
 const ar: Dict = {
   // Invitation
   tap_open: "اضغط لفتح الدعوة",
-  invite_to: "في ليلةٍ اختارها الله لتكون أجمل الليالي",
-  invite_join: "نجتمع على لحظات من الفرح والسرور",
-  invite_day: "اختارت من العمر موعدََا",
+  invite_to: "لحظات الفرح أختارت من عمري موعداََ",
+  invite_join: "إلى من هم أغلى من الــــــــــــروح",
+  invite_day: "ســـــــروري سيبقا مختلفاََ بحضوركم",
   invite_with_love: " ",
   and: "&",
-  invite_attend: "اتشرف بدعوتكم لحضور حفل زفاف ابنتي",
-  bride_name: "ليـــان",
-  groom_name: "ليـــان",
+  invite_attend: "بكل حُب ووّد أدعوكم لحضور",
+  bride_name: "حفـل زفـافي",
+  groom_name: "حفـل زفـافي",
   invite_god_willing: "وذلك بمشيئة الله",
   date_line: "25 . 11 . 2026",
   date_line_hijri: "15 . 06 . 1448 هـ",
@@ -34,14 +35,14 @@ const ar: Dict = {
   arrival_time: "8:00 مساءً",
   personal_invitation: "الدعوة شخصية",
 
-  // Timeline / Program (مفاتيح موحدة للخط الزمني والمشروع)
+  // Timeline / Program
   reception: "استقبال الضيوف",
   zaffa: "الزفة",
   dinner: "العشاء",
 
   // Restrictions
   no_cameras: "يمنع التصوير",
-  no_kids: "ادارة القاعة تمنع اصطحاب الاطفال",
+  no_kids: "إدارة القاعة تمنع اصطحاب الأطفال",
 
   // RSVP
   rsvp_title: "يشرفنا حضوركم",
@@ -52,7 +53,7 @@ const ar: Dict = {
   confirm: "تأكيد الحضور",
   decline: "الاعتذار",
   send: "إرسال",
-  sending: "جارٍ الإرسال...",
+  sending: "جارٍ الإرسال…",
   welcome: "أهلاً وسهلاً",
   thanks_attending: "شكراً لتأكيد حضورك",
   thanks_declined: "نقدّر اعتذارك",
@@ -67,15 +68,15 @@ const ar: Dict = {
 
 const en: Dict = {
   // Invitation
-  tap_open: "Tap to Open Invitation",
-  invite_to: "On a night chosen by Allah to be the most beautiful of nights",
-  invite_join: "We gather for moments of joy and happiness",
-  invite_day: "She chose a date from the days of her life",
-  invite_with_love: "  ",
+  tap_open: "Tap to Open the Invitation",
+  invite_to: "Moments of joy have chosen a date in my life",
+  invite_join: "To those who are dearer to us than our very souls",
+  invite_day: "Our joy will be even more special with your presence",
+  invite_with_love: " ",
   and: "&",
-  invite_attend: "I am honored to invite you to my daughter's wedding",
-  bride_name: "Layan",
-  groom_name: "Layan",
+  invite_attend: "With love and joy, I invite you to attend",
+  bride_name: "My Wedding Celebration",
+  groom_name: "My Wedding Celebration",
   invite_god_willing: "By the will of Allah",
   date_line: "25 . 11 . 2026",
   date_line_hijri: "15 . 06 . 1448 AH",
@@ -90,7 +91,7 @@ const en: Dict = {
 
   // Section Headers & Details
   big_word: "Details",
-  small_word: "Everything you need to know about our joyful day",
+  small_word: "Everything you need to know about our special day",
   location_button: "Location",
   event_location: "Grand Hall",
   event_date: "Wednesday, November 25, 2026",
@@ -99,26 +100,26 @@ const en: Dict = {
 
   // Timeline / Program
   reception: "Guest Reception",
-  zaffa: "Zaffa",
+  zaffa: "Wedding Procession",
   dinner: "Dinner",
 
   // Restrictions
-  no_cameras: "Photography is not permitted",
-  no_kids: "The venue management does not allow children",
+  no_cameras: "Photography Is Not Permitted",
+  no_kids: "The Hall Management Does Not Allow Children",
 
   // RSVP
-  rsvp_title: "We Are Honored by Your Presence",
-  rsvp_sub: "We would be honored to have you with us",
-  rsvp_deadline: "Please respond before the specified date",
-  name_label: "Name",
-  name_placeholder: "Enter your name here",
+  rsvp_title: "Your Presence Would Honor Us",
+  rsvp_sub: "We Would Be Honored to Have You With Us",
+  rsvp_deadline: "Please Respond Before the Specified Date",
+  name_label: "Full Name",
+  name_placeholder: "Enter Your Name Here",
   confirm: "Confirm Attendance",
-  decline: "Decline",
+  decline: "Decline the Invitation",
   send: "Send",
-  sending: "Sending...",
+  sending: "Sending…",
   welcome: "Welcome",
-  thanks_attending: "Thank you for confirming your attendance",
-  thanks_declined: "We appreciate your response",
+  thanks_attending: "Thank You for Confirming Your Attendance",
+  thanks_declined: "We Appreciate Your Response",
 
   // QR & Footer
   qr_title: "Your Personal Entry QR Code",
@@ -157,8 +158,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
   const t = (k: keyof typeof ar) => dicts[lang][k] ?? k;
 
-  const toggle = () =>
-    setLang((l) => (l === "ar" ? "en" : "ar"));
+  const toggle = () => setLang((l) => (l === "ar" ? "en" : "ar"));
 
   return (
     <Ctx.Provider value={{ lang, t, toggle, dir }}>
