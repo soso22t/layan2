@@ -7,11 +7,11 @@ const ar: Dict = {
   // Invitation
   tap_open: "اضغط لفتح الدعوة",
   invite_to: "لحظات الفرح أختارت من عمري موعداََ",
-  invite_join: "إلى من هم أغلى من الــــــــــــروح",
-  invite_day: "ســـــــروري سيبقا  مختلفاََ  بحضوركم",
+  invite_join: "إلى أحبـاء الـــروح",
+  invite_day: "بكـل الحــب الــــود",
   invite_with_love: " ",
   and: "&",
-  invite_attend: "بكل حُب ووّد أدعوكم لحضور",
+  invite_attend: "أتشرف بدعوكم لحضور",
   bride_name: "حفل زفـافي",
   groom_name: "حفل زفـافي",
   invite_god_willing: "وذلك بمشيئة الله",
@@ -70,11 +70,11 @@ const en: Dict = {
   // Invitation
   tap_open: "Tap to Open the Invitation",
   invite_to: "Moments of joy have chosen a date in my life",
-  invite_join: "To those who are dearer to us than our very souls",
-  invite_day: "Our joy will be even more special with your presence",
+  invite_join: "To the loved ones of our souls",
+  invite_day: "With all love and affection",
   invite_with_love: " ",
   and: "&",
-  invite_attend: "With love and joy, I invite you to attend",
+  invite_attend: "I am honored to invite you to attend",
   bride_name: "My Wedding Celebration",
   groom_name: "My Wedding Celebration",
   invite_god_willing: "By the will of Allah",
@@ -82,7 +82,7 @@ const en: Dict = {
   date_line_hijri: "15 . 06 . 1448 AH",
 
   // Countdown
-  countdown_date: "Until we meet on our joyful day",
+  countdown_date: "Until we meet on our happy day",
   countdown_title: "Countdown",
   days: "Days",
   hours: "Hours",
@@ -91,7 +91,7 @@ const en: Dict = {
 
   // Section Headers & Details
   big_word: "Details",
-  small_word: "Everything you need to know about our special day",
+  small_word: "Everything you need to know about our happy day",
   location_button: "Location",
   event_location: "Grand Hall",
   event_date: "Wednesday, November 25, 2026",
@@ -100,30 +100,30 @@ const en: Dict = {
 
   // Timeline / Program
   reception: "Guest Reception",
-  zaffa: "Wedding Procession",
+  zaffa: "Zaffa",
   dinner: "Dinner",
 
   // Restrictions
-  no_cameras: "Photography Is Not Permitted",
-  no_kids: "The Hall Management Does Not Allow Children",
+  no_cameras: "No Photography",
+  no_kids: "The hall management does not allow children",
 
   // RSVP
-  rsvp_title: "Your Presence Would Honor Us",
-  rsvp_sub: "We Would Be Honored to Have You With Us",
-  rsvp_deadline: "Please Respond Before the Specified Date",
-  name_label: "Full Name",
-  name_placeholder: "Enter Your Name Here",
+  rsvp_title: "Your Presence Honors Us",
+  rsvp_sub: "We Are Honored by Your Presence",
+  rsvp_deadline: "Please respond before the specified date",
+  name_label: "Your Full Name",
+  name_placeholder: "Enter your name here",
   confirm: "Confirm Attendance",
-  decline: "Decline the Invitation",
+  decline: "Decline",
   send: "Send",
   sending: "Sending…",
   welcome: "Welcome",
-  thanks_attending: "Thank You for Confirming Your Attendance",
-  thanks_declined: "We Appreciate Your Response",
+  thanks_attending: "Thank you for confirming your attendance",
+  thanks_declined: "We appreciate your response",
 
   // QR & Footer
-  qr_title: "Your Personal Entry QR Code",
-  save_qr: "Save QR Code",
+  qr_title: "Your Personal Barcode",
+  save_qr: "Save Barcode",
   section2_title: "Abdulmalik | Layan",
   section2_subtitle: "25 . 11 . 2026",
   tiktok: "غيمة",
