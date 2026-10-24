@@ -153,7 +153,7 @@ const Index = () => {
                     }}
                   >
                     <div className="translate-y-3 flex flex-col items-center w-full">
-                      {/* الأسطر العلويّة (تمت مباعدة الأسطر الثلاثة الأولى ورفع الكتلة لأعلى) */}
+                      {/* الأسطر العلويّة */}
                       <div
                         className="flex flex-col items-center gap-2.5 relative z-10 w-full -translate-y-3"
                         dir={lang === "ar" ? "rtl" : "ltr"}
@@ -190,7 +190,7 @@ const Index = () => {
                           {t("invite_with_love")}
                         </div>
 
-                        {/* سطر الدعوة (تم رفعه قليلاً) */}
+                        {/* سطر الدعوة */}
                         <div
                           className={`${
                             lang === "ar" ? "font-neirizi" : "font-amoshref"
@@ -200,18 +200,18 @@ const Index = () => {
                         </div>
                       </div>
 
-                      {/* أسماء العرسان */}
+                      {/* أسماء العرسان (تم منع نزول السطر نهائياً بـ whitespace-nowrap وضبط الحجم) */}
                       <div className="w-full my-2 py-0 h-12 flex items-center justify-center relative z-20">
                         <div
                           className={`${
                             lang === "ar"
-                              ? "font-iran text-[3.5rem] sm:text-[4.2rem] translate-y-2"
+                              ? "font-iran text-3xl sm:text-4xl translate-y-2"
                               : "font-whitney text-2xl sm:text-3xl translate-y-7"
-                          } tracking-wide leading-none text-center flex items-baseline justify-center gap-3 transition-transform duration-200`}
+                          } tracking-wide leading-none text-center flex items-baseline justify-center gap-3 whitespace-nowrap transition-transform duration-200`}
                           style={{ lineHeight: 0.85 }}
                           dir={lang === "ar" ? "rtl" : "ltr"}
                         >
-                          <span className="inline-flex items-center">
+                          <span className="inline-flex items-center whitespace-nowrap">
                             {t("bride_name")}
                           </span>
 
